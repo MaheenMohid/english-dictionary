@@ -1,24 +1,56 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="wrapper">
+      <header>
+        English Dictionary
       </header>
-    </div>
+      <div className="search">
+        <input type="text" placeholder="Search For A Word" required />
+        <i className="fas fa-search"></i>
+        <span className="material-icons">
+        </span>
+      </div>
+      <ul>
+        <li className="word">
+          <div className="details">
+            <p>Happy</p>
+            <span>adjective /'hapi'/</span>
+          </div>
+          <i className="fas fa-volume-up"></i>
+        </li>
+        <div className="content">
+          <li className="meaning">
+            <div className="details">
+              <p>Meaning</p>
+              <span>feeling or showing pleasure or contentment</span>
+            </div>
+          </li>
+        </div>
+
+        <li className="example">
+          <div className="details">
+            <p>Example</p>
+            <span>Maheen is looking happy and exicted.</span>
+          </div>
+        </li>
+
+        <li className="synonyms">
+          <div className="details">
+            <p>Synonyms</p>
+            <div className="list">
+              <span>glad,</span>
+              <span>contented,</span>
+              <span>delightful,</span>
+              <span>cheerful,</span>
+              <span>joyful</span>
+
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div >
   );
 }
 
